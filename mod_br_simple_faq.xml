@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>BR Simple FAQ</name>
+    <author>Janderson Moreira</author>
+    <creationDate>February 2026</creationDate>
+    <copyright>Copyright (c) 2026 Janderson Moreira. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>jandersonmm@gmail.com</authorEmail>
+    <authorUrl>https://github.com/jandersk8</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_BR_SIMPLE_FAQ_XML_DESCRIPTION</description>
+
+    <namespace path="src">Br\Module\SimpleFaq</namespace>
+
+    <files>
+        <filename module="mod_br_simple_faq">mod_br_simple_faq.php</filename>
+        <folder>src</folder>
+        <folder>services</folder>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <file>LICENSE.txt</file>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_br_simple_faq.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_br_simple_faq.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="FAQ Items">
+                <field name="q1" type="text" default="Question Sample 1" label="Question 1" />
+                <field name="a1" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit." label="Answer 1" filter="raw" />
+                <field name="q2" type="text" default="Question Sample 2" label="Question 2" />
+                <field name="a2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit." label="Answer 2" filter="raw" />
+                <field name="q3" type="text" default="Question Sample 3" label="Question 3" />
+                <field name="a3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit." label="Answer 3" filter="raw" />
+                <field name="q4" type="text" default="Question Sample 4" label="Question 4" />
+                <field name="a4" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit." label="Answer 4" filter="raw" />
+                <field name="q5" type="text" default="Question Sample 5" label="Question 5" />
+                <field name="a5" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit." label="Answer 5" filter="raw" />
+                <field name="q6" type="text" default="" label="Question 6" />
+                <field name="a6" type="textarea" default="" label="Answer 6" filter="raw" />
+                <field name="q7" type="text" default="" label="Question 7" />
+                <field name="a7" type="textarea" default="" label="Answer 7" filter="raw" />
+                <field name="q8" type="text" default="" label="Question 8" />
+                <field name="a8" type="textarea" default="" label="Answer 8" filter="raw" />
+                <field name="q9" type="text" default="" label="Question 9" />
+                <field name="a9" type="textarea" default="" label="Answer 9" filter="raw" />
+                <field name="q10" type="text" default="" label="Question 10" />
+                <field name="a10" type="textarea" default="" label="Answer 10" filter="raw" />
+            </fieldset>
+
+            <fieldset name="style" label="Design Settings">
+                <field name="max_width" type="text" default="800px" label="Max Width" />
+                <field name="bg_title" type="color" default="#f4f4f4" label="Title Background" />
+                <field name="bg_title_active" type="color" default="#e0e0e0" label="Title Background (Active)" />
+                <field name="color_title" type="color" default="#333333" label="Title Text Color" />
+                <field name="bg_answer" type="color" default="#ffffff" label="Answer Background" />
+                <field name="color_content" type="color" default="#666666" label="Answer Text Color" />
+                <field name="border_color" type="color" default="#dddddd" label="Border Color" />
+                <field name="border_radius" type="text" default="4px" label="Border Radius" />
+                <field name="font_size_q" type="text" default="18px" label="Question Font Size" />
+                <field name="font_size_a" type="text" default="16px" label="Answer Font Size" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
