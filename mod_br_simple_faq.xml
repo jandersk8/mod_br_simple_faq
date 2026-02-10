@@ -10,6 +10,10 @@
     <version>1.0.0</version>
     <description>MOD_BR_SIMPLE_FAQ_XML_DESCRIPTION</description>
 
+    <updateservers>
+        <server type="extension" priority="1" name="BR Simple FAQ Updates">https://raw.githubusercontent.com/jandersk8/mod_br_simple_faq/main/update.xml</server>
+    </updateservers>
+
     <namespace path="src">Br\Module\SimpleFaq</namespace>
 
     <files>
